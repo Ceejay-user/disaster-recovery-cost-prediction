@@ -1,5 +1,8 @@
+__pycache__/
+
 venv
-dataset/
+data/
+notebooks/e_d_a.ipynb
 
 Disaster Recovery Project.docx
 ~$saster Recovery Project.docx

@@ -5,8 +5,8 @@ def download_fema_data(endpoint, columns, filename):
     base_url = f"https://www.fema.gov/api/open/{endpoint}"
     url = f"{base_url}?$select={columns}&$format=csv&$allrecords=true"
     df = pd.read_csv(url, low_memory=False)
-    df.to_csv(f"dataset/{filename}.csv", index=False)
-    print(f"Saved: dataset/{filename}.csv ({len(df)} rows)")
+    df.to_csv(f"../../data/raw/{filename}.csv", index=False)
+    print(f"Saved: data/{filename}.csv ({len(df)} rows)")
 
 
 # Disaster Declarations
