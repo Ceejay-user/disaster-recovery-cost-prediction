@@ -21,10 +21,11 @@ def get_merged_data(path_to_data=None):
         'totalObligated': 'sum'
     }).reset_index()
 
+    # Drop duplicates
+    df_funding_agg = df_funding_agg.drop_duplicates()
+
     # Merge
     merged = df_summaries.merge(df_decl, on='disasterNumber', how='left')
     merged = merged.merge(df_funding_agg, on='disasterNumber', how='left')
     
     return merged
-
-print(get_merged_data().head())
