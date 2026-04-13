@@ -1,8 +1,19 @@
 __pycache__/
 
 venv
-data/
 notebooks/e_d_a.ipynb
+mlartifacts/
+mlruns/
+mlflow.db
+preprocessor.joblib
+src/preprocessing/feature_importance.csv
+src/preprocessing/feature_importance.png
+src/models/feature_importance.png
+src/models/feature_importance.csv
+src/models/selected_features.txt
+src/models/shap_summary.png
+src/models/shap_waterfall.png
+processor.joblib
 
 Disaster Recovery Project.docx
 ~$saster Recovery Project.docx
